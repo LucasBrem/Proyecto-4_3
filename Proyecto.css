@@ -1,0 +1,35 @@
+body {
+   background-color: black 
+}
+
+
+.materias {
+background-color: #222;
+color: aquamarine;
+width: 120px;
+height: 60px;
+border-radius: 10px;
+display: flex;
+
+}
+.division {
+background-color: #222;
+color: aquamarine;
+width: 120px;
+height: 60px;
+border-radius: 10px;
+
+}
+
+table {
+  background-color: #222; 
+  color: white;           
+  border-collapse: collapse;
+  width: 50%;
+}
+
+th, td {
+  border: 1px solid white;
+  padding: 8px;
+  text-align: center;
+}
