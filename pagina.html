@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+ <link rel="stylesheet" href="estilos.css">
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Proyecto Informatico y Base de datos</title>
+</head>
+<body>
+ <h1>Lista de asistencia</h1>
+ <div class="contenedor-selects"> 
+   <select id="cursos" name="curso"><option>Curso</option></select>
+  <select id="materias" name="materia"><option>Materia</option></select>
+ </div>
+
+<div class="tabla-asistencia-wrapper"> 
+<table>
+<thead>
+<tr>
+<th>Nombre</th>
+<th>Apellido</th>
+<th>Asistencia</th>
+</tr>
+</thead> 
+ <tbody> 
+ <tr><td colspan="4" style="color: grey;">Selecciona el curso y su materia para poder ver los alumnos</td></tr>
+</tbody></table>
+</div> 
+  <form onsubmit="agregarAlumno(event)">
+  <input type="text" placeholder="Nombre" name="nombre" />
+  <input type="text" placeholder="Apellido" name="apellido" />
+  <button type="submit">Agregar alumno</button>
+  </form>
+  <form onsubmit="crearCurso(event)">
+  <input type="text" placeholder="Año" name="anio" />
+  <input type="text" placeholder="Division" name="division" />
+  <input type="text" placeholder="Especialidad" name="especialidad" />
+  <button type="submit">Agregar Curso</button>
+  </form>
+  <form id="crear-materia" onsubmit="crearMateria(event)">
+  <input type="text" placeholder="Materia" name="nombre"/>
+  <button type="submit">Agregar Materia</button>
+  </form>
+</body>
+<script src="cliente.js"></script> 
+</html>
